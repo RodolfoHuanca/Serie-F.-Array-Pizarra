@@ -1,0 +1,19 @@
+//PERRIN
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    float v[n];
+    v[0]=3;
+    v[1]=0;
+    v[2]=2;
+    for(int i=3;i<n;i++){
+        v[i]=v[i- 2]+v[i- 3];
+    }
+    for(int i =0;i<n;i++)
+    {
+        cout<<v[i]<<" ";
+    }
+    return 0;
+}
